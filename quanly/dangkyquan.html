@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dangkyquan.css">
+    <title>Đăng Ký Quán</title>
+</head>
+<body>
+    <div class="than">
+
+        <div class="than1"></div>
+
+        <div class="than2">
+
+            <center><h1>Đăng ký quán</h1></center>
+            <form onsubmit="return kiemtra()" action="xulydangkyquan.php" method="post" enctype="multipart/form-data">
+                <div class="hang"><label for="accquan">Tên đăng nhập:</label>   <input onchange="return checkaccquan()" type="text" name="accquan" id="accquan"></div>
+                <p id="thongbaoaccquan" class="thongbaoan">Không được bỏ trống tên đăng nhập</p>
+                <div class="hang"><label for="pwdquan">Mật khẩu:</label>    <input onchange="return checkpwdquan()" type="password" name="pwdquan" id="pwdquan"></div>
+                <p id="thongbaopwdquan" class="thongbaoan">Không được bỏ trống mật khẩu</p>
+                <p id="thongbaopwdquan2" class="thongbaoan">Mật khẩu phải có độ dài 1-10 kí tự</p>
+                <div class="hang"><label for="rpwdquan">Nhập lại mật khẩu:</label>    <input onchange="return checkrpwdquan()" type="password" name="rpwdquan" id="rpwdquan"></div>
+                <p id="thongbaorpwdquan" class="thongbaoan">Không được bỏ trống nhập lại mật khẩu</p>
+                <p id="thongbaorpwdquan2" class="thongbaoan">Khác với mật khẩu vừa nhập</p>
+                <div class="hang"><label for="tenquan">Tên quán:</label>  <input onchange="return checktenquan()" type="text" name="tenquan" id="tenquan"></div>
+                <p id="thongbaotenquan" class="thongbaoan">Không được bỏ trống tên quán</p>
+                <div class="hang"><label for="hinhquan">Hình ảnh quán:</label>   <input type="file" name="hinhquan" ></div>
+                <div class="hang"><label for="diachiquan">Địa chỉ quán:</label>    <input type="text" name="diachiquan" id="diachiquan"></div>
+                <div class="hang"><label for="ngaythanhlap">Ngày thành lập:</label> <input type="date" name="ngaythanhlap" id="ngaythanhlap"></div>
+                <div class="nut"><input type="submit" value="Đăng ký quán" class="nut1"> <input type="reset" value="Làm lại" class="nut2">   <a href="./dangnhapquan.html" class="nut3"><center>Đăng nhập quán</center></a></div>
+            </form>
+
+        </div>
+
+        <div class="than3"></div>
+
+    </div>
+    <script>
+        var accquan  = document.getElementById("accquan");
+        var thongbaoaccquan = document.getElementById("thongbaoaccquan");
+        var pwdquan = document.getElementById("pwdquan");
+        var thongbaopwdquan = document.getElementById("thongbaopwdquan");
+        var thongbaopwdquan2 = document.getElementById("thongbaopwdquan2");
+        var rpwdquan = document.getElementById("rpwdquan");
+        var thongbaorpwdquan = document.getElementById("thongbaorpwdquan");
+        var thongbaorpwdquan2 = document.getElementById("thongbaorpwd2quan");
+        var tenquan = document.getElementById("tenquan");
+        var thongbaotenquan = document.getElementById("thongbaotenquan");
+
+        function checkaccquan(){
+            var valueaccquan = accquan.value;
+            if(valueaccquan==""){
+                thongbaoaccquan.className="thongbao";
+                return false;
+            }
+            else{
+                thongbaoaccquan.className="thongbaoan";
+                return true;
+            }
+        }
+
+        function checkpwdquan(){
+            var valuepwdquan = pwdquan.value;
+            if(valuepwdquan==""){
+                thongbaopwdquan.className="thongbao";
+                return false;
+            }
+            else{
+                if(valuepwdquan.length>10){
+                    thongbaopwdquan2.className="thongbao";
+                    return false;
+                }
+                else{
+                    thongbaopwdquan.className="thongbaoan";
+                    thongbaopwdquan2.className="thongbaoan";
+                    return true;
+                }
+            }
+        }
+
+        function checkrpwdquan(){
+            var valuepwdquan = pwdquan.value;
+            var valuerpwdquan = rpwdquan.value;
+            if(valuerpwdquan==""){
+                thongbaorpwdquan.className="thongbao";
+                return false;
+            }
+            else{
+                if(valuerpwdquan!=valuepwdquan){
+                    thongbaorpwdquan2.className="thongbao";
+                    return false;
+                }
+                else{
+                    thongbaorpwdquan.className="thongbaoan";
+                    thongbaorpwdquan2.className="thongbaoan";
+                    return true;
+                }
+            }
+        }
+
+        function checktenquan(){
+            var valuetenquan = tenquan.value;
+            if(valuetenquan==""){
+                thongbaotenquan.className="thongbao";
+                return false;
+            }
+            else{
+                thongbaotenquan.className="thongbaoan";
+                return true;
+            }
+        }
+
+        function kiemtra(){
+            if(checkaccquan()==true && checkpwdquan()==true && checkrpwdquan()==true && checktenquan()==true){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+
+    </script>
+</body>
+</html>

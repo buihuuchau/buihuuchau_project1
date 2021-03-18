@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="doanhthu.css">
+    <title>Hóa Đơn Đã Duyệt</title>
+</head>
+<body>
+    <div class="than">
+        <div class="than1"></div>
+        <div class="than2">
+            <center>Chọn tháng xem doanh thu</center>
+            <form action="xulydoanhthu.php" method="post">
+                <label for="tungay">Ngày đầu tháng:</label>
+                <input type="date" name="tungay" id="tungay">
+                <label for="nam">Năm:</label>
+                <input type="number" name="nam" id="nam">
+                <input type="submit" value="Xem doanh thu">
+                <a href="thongtincanhan.php" class="nut">Về trang chính</a>
+            </form>
+            
+        </div>
+        <div class="than3"></div>
+    </div>
+</body>
+</html>
