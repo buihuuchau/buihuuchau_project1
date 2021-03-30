@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="themmon.css">
+    <title>Thêm món</title>
+</head>
+<body>
+
+    <div class="than">
+        <div class="than1"></div>
+        <div class="than2">
+            <center>Thêm món</center>
+            <form action="xulythemmon.php" method="post" enctype="multipart/form-data">
+                <div class="hang"><label for="tenmmon">Tên món:</label>  <input type="text" name="tenmon" id="tenmon" class="nhap"></div>
+                <div class="hang"><label for="dongia">Đơn giá:</label>   <input type="number" name="dongia" id="dongia" class="nhap"></div>
+                <div class="hang"><label for="mota">Mô tả:</label>   <input type="text" name="mota" id="mota" class="nhap"></div>
+                <div class="hang"><label for="hinhmon">Hình ảnh món:</label>   <input type="file" name="hinhmon" id="hinhmon" class="nhap"></div>
+                <input type="submit" value="Thêm" class="nut">
+            </form>
+        </div>
+        <div class="than3"></div>
+    </div>
+
+</body>
+</html>

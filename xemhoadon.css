@@ -1,0 +1,57 @@
+.than2 .tieude{
+    font-size: 60px;
+    font-weight: bold;
+}
+/*  */
+.bang1{
+    border-radius: 2px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+.bang1 td{
+    border-right: 2px solid black;
+}
+/*  */
+.bang2{
+    border-radius: 2px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 80%;
+    margin-left: 10%;
+}
+.bang2 td{
+    border-right: 2px solid black;
+    width: 20%;
+}
+/*  */
+.bang3{
+    border-radius: 2px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 60%;
+    margin-left: 20%;
+}
+.bang3 td{
+    border-right: 2px solid black;
+    width: 10%;
+}
+/*  */
+.than2 .ngay{
+    font-size: 30px;
+    font-weight: bold;
+}
+.than2 .ket{
+    font-size: 30px;
+    font-weight: bold;
+}
+.than2 .nut{
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    border: 3px solid black;
+    text-decoration-line: none;
+    margin-right: 10px;
+    background-color: greenyellow;
+}

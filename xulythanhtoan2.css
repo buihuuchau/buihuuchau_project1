@@ -1,0 +1,51 @@
+.than{
+    background-color: bisque;
+    width: 50%;
+    margin-left: 25%;
+}
+.than .tieude{
+    font-size: 25px;
+}
+.than .tt{
+    display: flex;
+    margin-left: 10%;
+}
+.than .tt .tt1{
+    flex: 1;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*  */
+.than .bang{
+    border: 5px solid black;
+    width: 60%;
+    margin-left: 20%;
+}
+.than .bang .hang{
+    display: flex;
+    background-color: cornsilk;
+}
+.than .bang .cot1{
+    flex: 1;
+    border-right: 2px solid black;
+}
+.than .bang .cot2{
+    flex: 5;
+    border-right: 2px solid black;
+}
+.than .bang .cot3{
+    flex: 3;
+}
+/*  */
+.than .ket{
+    font-size: 20px;
+    margin-left: 20%;
+    color: blue;
+}
+.than .nut{
+    background-color: greenyellow;
+    text-decoration: none;
+    border: 2px solid black;
+    font-size: 20px;
+    margin-left: 20%;
+}
