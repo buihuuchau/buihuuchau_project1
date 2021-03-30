@@ -89,7 +89,7 @@
                 <a href="./hoadon2.php" class="nut"><center>Hóa đơn 2</center></a>
                 <a href="./hoadon.php" class="nut"><center>Hóa đơn</center></a>
                 <a href="./phache.php" class="nut"><center>Pha chế</center></a>             
-                <a href="./chucnang2.php" class="nut"><center>Chức năng 2</center></a>
+                <a href="./hoadon3.php" class="nut"><center>Hóa đơn 3</center></a>
                 <a href="./chucnang1.php" class="nut"><center>Chức năng 1</center></a>
                 <a href="./chucnang2.php" class="nut"><center>Chức năng 2</center></a>
                 <a href="./xulydangxuat.php" class="nut"><center>Đăng xuất</center></a>

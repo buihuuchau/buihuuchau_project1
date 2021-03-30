@@ -8,7 +8,7 @@
     kiemtraquyen(1,2,4,0,0);
 
     $idhd = $_GET['idhd'];
-    $idban = $_GET['idban'];
+    $idbancu = $_GET['idban'];
 
     $sql = "SELECT * FROM `ban` WHERE idquan='$idquan'";
     $result = query($sql);
@@ -32,6 +32,7 @@
         <div class="than2">
             <center>Chọn Bàn Muốn Đổi</center><br>
             <form action="xulydoiban2.php" method="post">
+                <input class="an" type="text" name="idbancu" id="idbancu" value="<?php echo $idbancu ?>">
                 <input class="an" type="text" name="idhd" id="idhd" value="<?php echo $idhd ?>">
                 <label for="idban">Chọn bàn muốn đổi:</label>
                 <select name="idban" id="idban">

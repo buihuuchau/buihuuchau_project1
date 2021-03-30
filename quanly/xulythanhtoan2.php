@@ -70,7 +70,7 @@
         <?php echo "<div class='ket'><br>Tổng cộng: $thanhtien VNĐ</div>"; ?>
         <a href="" class="nut">In hóa đơn</a>
         <!-- <div class="nut1" onclick="quayve()">Về trang trước</div> -->
-        <a href="./hoadon2.php" class="nut">Hóa đơn mới</a>
+        <a href="./hoadon3.php" class="nut">Hóa đơn mới</a>
     </div>
     <!-- <script>
       function quayve(){

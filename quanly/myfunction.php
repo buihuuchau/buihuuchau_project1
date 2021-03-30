@@ -1,6 +1,7 @@
 <?php
     function query($sql){
         $con = new mysqli("localhost", "root","", "quanly");
+        // $con = new mysqli("localhost", "root","", "quanly");
         $con->set_charset("utf8");
         $result = $con->query($sql);
         $con->close();

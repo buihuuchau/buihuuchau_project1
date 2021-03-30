@@ -100,11 +100,11 @@
                         echo"<div class='ttthanhtien'>Hóa đơn tạm tính: $thanhtien</div>";        
                     ?>
                 <div class="nut">
-                    <a href="hoadon2.php" class="nut1"><center>Về trang trước</center></a>
+                    <a href="hoadon3.php" class="nut1"><center>Về trang trước</center></a>
                     <a href="taohoadon.php?idban=<?php echo $idban ?>" class="nut1"><center>Tạo hóa đơn</center></a>
                     <a href="xulydoiban1.php?idban=<?php echo $idban ?>&idhd=<?php echo $idhd ?>" class="nut1"><center>Đổi bàn</center></a>
                     <a href="datmon.php?idhd=<?php echo $idhd ?>" class="nut1"><center>Thêm món HĐ</center></a>
-                    <a href="xulythanhtoan1.php?idhd=<?php echo $idhd ?>" class="nut1"><center>Thanh toán</center></a>
+                    <a href="xulythanhtoan1.php?idban=<?php echo $idban ?>&idhd=<?php echo $idhd ?>" class="nut1"><center>Thanh toán</center></a>
                 </div>
             </div>
 

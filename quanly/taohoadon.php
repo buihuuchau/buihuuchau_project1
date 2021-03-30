@@ -25,6 +25,9 @@
     else{
         $sql2 = "INSERT INTO `hoadon`(`idtv`, `idban`, `idquan`, `ngaytao`, `giotao`) VALUES ('$idtv','$idban','$idquan','$ngaytao','$giotao')";
         $result2 = query($sql2);
+
+        $sql4 = "UPDATE `ban` SET trangthai='1' WHERE idban='$idban'";
+        $result4 = query($sql4);
     
         $sql3 = "SELECT * FROM `hoadon` WHERE idtv='$idtv' AND idban='$idban' AND idquan='$idquan' AND ngaytao='$ngaytao' AND giotao='$giotao'";
         $result3 = query($sql3);

@@ -7,6 +7,7 @@
     kiemtraquyen(1,2,4,0,0);
 
     $idhd = $_GET['idhd'];
+    $idban = $_GET['idban'];
 
     $sql2 = "SELECT * FROM `chitiet` WHERE idquan='$idquan' AND idhd='$idhd' AND thuchien!='0'";
     $result2 = query($sql2);
@@ -23,6 +24,9 @@
     $sql3 = "UPDATE `hoadon` SET `idtv`='$idtv',`thanhtien`='$thanhtien',`trangthai`='1' WHERE idhd='$idhd'";
     $result3 = query($sql3);
 
+    $sql5 = "UPDATE `ban` SET trangthai='0' WHERE idban='$idban'";
+    $result5 = query($sql5);
+
     if($result3){
         chuyentrang("./xulythanhtoan2.php?idhd=$idhd");
     }
@@ -30,7 +34,6 @@
         thongbao("Thanh toan that bai!");
     }
     $sql = "DELETE FROM `chitiet` WHERE idhd='$idhd' AND thuchien='0'";
-    echo $sql;
     $result = query($sql);
 
 ?>

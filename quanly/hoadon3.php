@@ -12,6 +12,9 @@
 
     $sql5 = "SELECT * FROM `ban` WHERE idquan='$idquan'";
     $result5 = query($sql5);
+
+    $sql6 = "SELECT * FROM `ban` WHERE idquan='$idquan'";
+    $result6 = query($sql6);
 ?>
 
 
@@ -23,7 +26,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="hoadon2.css">
+        <link rel="stylesheet" href="hoadon3.css">
         <title>Tùy chọn chức năng hóa đơn</title>
     </head>
     <body>
@@ -32,6 +35,36 @@
 
             <div class="than2">
                 <center>Tùy Chọn Chức Năng Hóa Đơn</center>
+
+                    <div class="danhsachban">
+                        <?php
+                            while($ban = $result6->fetch_array()){
+                                $idban = $ban['idban'];
+                                $tenban = $ban['tenban'];
+                                $trangthai = $ban['trangthai'];
+                                $class = "ban ";// doi mau ban bang bien php gan vao echo
+                                if($trangthai==0){
+                                    $class = $class . "green";
+                                }else{
+                                    $class = $class . "red";
+                                }
+                                echo"
+                                    <div class='$class'>
+                                        <a href='chucnanghoadon.php?idban=$idban'>$tenban</a>
+                                    </div>
+                                ";
+                            }
+                        ?>
+                    </div>
+                   
+
+                   
+
+
+
+
+
+
                     <!-- <form action="chucnanghoadon.php" method="post"> -->
                     <form action="chucnanghoadon.php" method="get">
                         <label for="tenban">Chọn bàn:</label>
